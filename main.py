@@ -202,7 +202,7 @@ class generate_analysis(dspy.Signature):
     AI/ML and Data Focus: Match internships that specifically seek experience or interest in AI/ML model development, data analysis, or similar areas. Look for keywords like "machine learning," "data engineering," or "data-driven solutions" in the internship descriptions.
     Ensure that the internships do not include "research"  in their titles, skills, or descriptions.
     Practical Implementation: Prioritize internships that emphasize hands-on experience in development, engineering, application development, or implementation roles over theoretical or research-focused roles.
-    For Match Analysis: do a detailed match analysis for each internship, highlighting the key points of alignment between the student's profile and the internship requirements. Provide a brief summary of the match analysis for each internship.
+    For Match Analysis: do a detailed match analysis for each internship, explaining how resume matches with internship. Provide a brief summary of the match analysis for each internship.
     
     For Output: 
     Strictly follow the output format as described below:
