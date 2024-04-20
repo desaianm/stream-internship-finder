@@ -212,7 +212,7 @@ class generate_analysis(dspy.Signature):
     "name": "job title",
     "company": "company name",
     "apply_link": "application link",
-    "match_analysis":"analysis"
+    "match_analysis":"a very detailed analysis"
     }
     
     No Matches: If no internships are a good fit, return None.
