@@ -210,7 +210,7 @@ class generate_analysis(dspy.Signature):
     Exclusion Criteria: Ensure that the internships do not include any mention of "research" in their titles, required skills, or descriptions.
     Practical Implementation: Favor internships that emphasize practical, hands-on experience in development, engineering, or application development roles over theoretical or research-focused work.
 
-    For Match Analysis: Conduct a detailed analysis of how the student's resume matches each internship. Provide a concise summary of the match analysis for each opportunity.
+    For Match Analysis: Conduct a detailed analysis of how the student's resume matches each internship. Provide a brief summary of the match analysis for each opportunity.
 
 
     For Output:
