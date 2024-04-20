@@ -182,40 +182,30 @@ def get_resume():
 class generate_analysis(dspy.Signature):
     """
     Your Role:
-    As a Matchmaking Manager, your expertise lies in connecting students with their dream internship opportunities. You are equipped with a student's resume and a list of potential internships. Your task is to meticulously analyze and identify the best matches by following specific criteria.
+    You are a Matchmaking Manager, an expert at connecting students with their ideal internship opportunities.
 
-
+    Input:
+    You will be provided with a student's resume and a list of potential internship opportunities. Your task is to carefully analyze and match the student's credentials with the requirements of each internship, following the specific criteria outlined below.
     Matching Criteria:
 
 
     Educational Background:
-
-
-    Degree and Major: Aim for exact matches between the student's degree level and major and the requirements specified in the internships. Consider close alignments if exact matches are not available.
-    Related Fields of Study: Treat closely related fields of study as potential matches. For instance, consider a student with a Computer Science major for IT or Software Engineering internship opportunities.
-    Relevant Coursework: Give preference to internships that specifically seek coursework mentioned in the student's resume. For example, if an internship prefers candidates with advanced Data Structures knowledge, and the student has taken a relevant course, it strengthens the match.
-
+    Degree Level and Major: Seek exact matches or close alignments between the student's degree level (bachelor's, master's, etc.) and major with the educational requirements specified in the internships.
+    Related Fields of Study: Consider closely related fields of study as a potential match. For example, a student majoring in Computer Science could be a good fit for internships seeking IT or Software Engineering majors.
+    Relevant Coursework: Give bonus points to internships that specifically mention or prefer certain courses that the student has completed. For example, if an internship seeks candidates with a background in Data Structures and the student has taken an advanced course in that area, it strengthens the match.
     Skill and Experience Match:
-
-
-    Required Skills: Look for strong overlaps between the technical skills on the student's resume and the required skills in the internship descriptions.
-    Tools and Frameworks: Prioritize internships that specifically mention tools, programming languages, or frameworks that the student has hands-on experience with. Proficiency or project experience with required tools is a strong indicator of a good fit.
-    Applied Skills: Value practical, hands-on project or work experience that demonstrates the application of required skills. For instance, if an internship seeks web development skills, and the student has a portfolio of built and deployed websites, it is a clear advantage.
-
+    Required Skills: Look for strong overlaps between the technical skills listed on the student's resume and the required skills outlined in the internship descriptions.
+    Tools and Frameworks: Prioritize internships that specifically mention tools, programming languages, or frameworks that the student has hands-on experience with. For example, if an internship seeks proficiency in Python, and the student has worked on Python projects, it is a strong match.
+    Applied Skills: Value projects or previous work experiences that demonstrate the practical application of the required skills. For instance, if an internship seeks candidates with web development skills, and the student has built and deployed websites, it is a clear indication of a good fit.
     Project Relevance:
-
-
-    Project Experience: Scrutinize the student's project portfolio to identify technical skills and expertise that align with the internships' requirements.
-    AI/ML and Data Focus: Specifically, look for internships that seek experience or interest in AI/ML model development, data analysis, or similar fields. Keyword matches such as "machine learning," "data engineering," or "data-driven solutions" indicate potential alignments.
-    Exclusion Criteria: Ensure that the internships do not include any mention of "research" in their titles, required skills, or descriptions.
-    Practical Implementation: Favor internships that emphasize practical, hands-on experience in development, engineering, or application development roles over theoretical or research-focused work.
-
-    For Match Analysis: Conduct a detailed analysis of how the student's resume matches each internship. Provide a brief summary of the match analysis for each opportunity.
-
-
+    Project Experience: Analyze the student's project portfolio to identify technical skills and areas of expertise that align with the internships' requirements.
+    AI/ML and Data Focus: Match internships that specifically seek experience or interest in AI/ML model development, data analysis, or similar areas. Look for keywords like "machine learning," "data engineering," or "data-driven solutions" in the internship descriptions.
+    Ensure that the internships do not include "research"  in their titles, skills, or descriptions.
+    Practical Implementation: Prioritize internships that emphasize hands-on experience in development, engineering, application development, or implementation roles over theoretical or research-focused roles.
+    For Match Analysis: do a detailed match analysis for each internship, explaining how resume matches with internship. Provide a brief summary of the match analysis for each internship.
+    
     For Output:
-    Use the following JSON array format to provide the top-matched internships:
-
+    Use the following JSON array format to provide the top-matched internships in a single array:
 
     [
         {
@@ -233,6 +223,7 @@ class generate_analysis(dspy.Signature):
     ]
 
     If there are no suitable matches, return None. Ensure that no additional words or JSON annotations are included outside the code block.
+        
 
     """
     
