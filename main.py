@@ -207,7 +207,7 @@ class generate_analysis(dspy.Signature):
     Output guidelines:
     Strictly follow the output format as described below:
     keep max tokens 4000
-    strictly just provide a JSON file with the top-matched internships nothing else, following this format :
+    strictly just provide a JSON array with the top-matched internships following this format and don't add a single work after three quotes :
     
     {
     "name": "",
