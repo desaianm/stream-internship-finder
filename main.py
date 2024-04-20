@@ -254,6 +254,7 @@ def main():
             my_bar.progress(30,text="Finding Internships")   
             
             generate = analysis(resume)
+            print(generate)
 
             if generate != "None":
                 st.subheader("List of Internships:")
