@@ -204,19 +204,19 @@ class generate_analysis(dspy.Signature):
     Practical Implementation: Prioritize internships that emphasize hands-on experience in development, engineering, application development, or implementation roles over theoretical or research-focused roles.
     For Match Analysis: do a detailed match analysis for each internship, highlighting the key points of alignment between the student's profile and the internship requirements. Provide a brief summary of the match analysis for each internship.
     
-    Output guidelines:
+    For Output: 
     Strictly follow the output format as described below:
-    keep max tokens 4000
     strictly just provide a JSON array with the top-matched internships following this format and don't add a single work after three quotes :
     
     {
-    "name": "",
-    "company": "",
-    "apply_link": "",
-    "match_analysis":""
+    "name": "job title",
+    "company": "company name",
+    "apply_link": "application link",
+    "match_analysis":"analysis"
     }
+    
     No Matches: If no internships are a good fit, return None.
-
+    don't add a single word like json after three quotes
 
     """
     
