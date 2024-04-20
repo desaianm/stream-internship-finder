@@ -143,7 +143,7 @@ class Internship_finder(dspy.Module):
             
         analysis = self.generate_analysis(resume=str(resume), context=context).output
               
-        return json.loads(analysis)
+        return json.load(analysis)
     
 
 
